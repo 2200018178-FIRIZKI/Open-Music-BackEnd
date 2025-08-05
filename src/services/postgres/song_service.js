@@ -7,6 +7,7 @@ const NotFoundError = require('../../exceptions/NoteFoundError');
 class SongsService {
   constructor() {
     this.pool = new Pool();
+    console.log('🎵 SongsService initialized');
   }
 
   async addSong({
@@ -63,7 +64,7 @@ class SongsService {
     const result = await this.pool.query(query);
 
     if (!result.rows.length) {
-      throw new NotFoundError('Catatan tidak ditemukan');
+      throw new NotFoundError('Lagu tidak ditemukan');
     }
 
     return result.rows.map(mapDBToModel)[0];

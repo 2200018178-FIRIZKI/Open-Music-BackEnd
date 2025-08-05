@@ -7,7 +7,7 @@ const mapDBToModel = ({
   duration,
   albumId,
   createdAt,
-  updateAt,
+  updatedAt,
 }) => ({
   id,
   title,
@@ -17,7 +17,7 @@ const mapDBToModel = ({
   duration,
   albumId,
   createdAt,
-  updateAt,
+  updatedAt,
 });
 
 module.exports = { mapDBToModel };

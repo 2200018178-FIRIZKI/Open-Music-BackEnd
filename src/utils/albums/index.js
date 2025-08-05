@@ -4,14 +4,14 @@ const mapDBToModel = ({
   year,
   songs,
   createdAt,
-  updateAt,
+  updatedAt,
 }) => ({
   id,
   name,
   year,
   songs,
   createdAt,
-  updateAt,
+  updatedAt,
 });
 
 module.exports = { mapDBToModel };

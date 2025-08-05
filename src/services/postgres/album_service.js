@@ -7,6 +7,7 @@ const NotFoundError = require('../../exceptions/NoteFoundError');
 class AlbumsService {
   constructor() {
     this.pool = new Pool();
+    console.log('📊 AlbumsService initialized');
   }
 
   async addAlbum({ name, year }) {
